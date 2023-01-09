@@ -15,7 +15,7 @@ public class DBTasks {
 
         System.out.println(statement.executeQuery("SELECT * FROM ForbesDB WHERE Country = 'France' AND Networth > 10 ORDER BY Age").getString("Name"));
 
-        resultSet = statement.executeQuery("SELECT * from ForbesDB WHERE Country = 'United States' AND Industry = 'Energy' ORDER BY Networth DESC;");
+        resultSet = statement.executeQuery("SELECT * FROM ForbesDB WHERE Country = 'United States' AND Industry = 'Energy' ORDER BY Networth DESC;");
         System.out.println(resultSet.getString("Name") + " " + resultSet.getString("Source"));
         statement.close();
     }
