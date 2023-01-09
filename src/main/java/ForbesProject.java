@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
 
-public class ForbesProject {
+public class ForbesProject 
+{
     public static void main(String[] args) throws SQLException, IOException, CsvException, ClassNotFoundException
     {
         ArrayList<Forbes> participant = getParticipant();
@@ -31,6 +32,7 @@ public class ForbesProject {
         }
         DBTasks.run(connect);
     }
+    
     private static ArrayList<Forbes> getParticipant() throws IOException, CsvException
     {
         ArrayList<Forbes> participant = new ArrayList<Forbes>();
